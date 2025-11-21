@@ -4,7 +4,10 @@ This repository hosts a Password Strength Analyzer, a utility designed to provid
 This Python-based command-line tool assesses the security level of a given password by evaluating factors like length, character diversity.
 
 PROJECT OVERVIEW
-Our current password rules are like a simple checklist that says, "You must be 8-10 characters long and have a capital letter," which is easy for hackers to get around (like the weak password "school name 12"). The smarter approach uses Artificial Intelligence (AI), which acts like a highly trained expert. This expert doesn't just check the rules; it analyzes millions of cracked passwords to learn what really makes one strong, like the overall randomness and patterns. It then gives your password a real-world risk score—predicting how many years it would actually take a supercomputer to guess it—moving us from a basic, easily fooled security system to a dynamic defense that can spot and block even the newest, trickiest attacks.
+
+Welcome to the Password Strength Analyzer ! This project is a simple command-line tool developed in Python to evaluate the security level of a password.
+In today's digital world, strong passwords are the first line of defense against security breaches. This analyzer helps users understand why their password is weak or strong by scoring it based on some criterias and providing specific feedbacks for improvement. It's a great demonstration of basic security logic and programming fundamentals.
+
 
 FEATURES AND LOGICS
 
@@ -75,17 +78,20 @@ Enter the password :
 Type your password and press Enter to see the results, score, and security rating.
 
 EXAMPLE OUTPUT
+
+If you enter a password like `hello`:
+
 ```
-### AI-Enhanced Password Strength Analyzer ###
-Enter the password :Tr0ub4dor&3
+### password analysis ###
+analyzed password : hello
+final score of the inputted password : 30 / 100
+rating of the inputted password : very weak, need much more improvement
 
-### AI-Enhanced Password Risk Analysis ###
-analyzed password : Tr0ub4dor&3
-final risk score of the inputted password : 90 / 100 (Penalties Applied)
-Predicted Real-World Risk : HIGH SECURITY - Estimated to take years to crack.
-
-### Suggestions for Dynamic Defense Improvement ###
-Feedback : Great work! Your password shows high randomness and avoids common patterns, indicating a low real-world risk.
+### suggestions for improvement ###
+--> add some upper case words
+--> add some digits
+--> add some characters
+--> length of password is too small, suggested length = 10 
 ```
 
 PROJECT STRUCTURE
