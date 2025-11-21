@@ -4,6 +4,7 @@ This repository hosts a Password Strength Analyzer, a utility designed to provid
 This Python-based command-line tool assesses the security level of a given password by evaluating factors like length, character diversity.
 
 PROJECT OVERVIEW
+
 Our current password rules are like a simple checklist that says, "You must be 8 characters long and have a capital letter," which is easy for hackers to get around (like the weak password "school name 12"). The smarter approach uses Artificial Intelligence (AI), which acts like a highly trained expert. This expert doesn't just check the rules; it analyzes millions of cracked passwords to learn what really makes one strong, like the overall randomness and patterns. It then gives your password a real-world risk score—predicting how many years it would actually take a supercomputer to guess it—moving us from a basic, easily fooled security system to a dynamic defense that can spot and block even the newest, trickiest attacks.
 
 FEATURES AND LOGICS
@@ -75,6 +76,7 @@ Enter the password :
 Type your password and press Enter to see the results, score, and security rating.
 
 EXAMPLE OUTPUT
+
 ```
 ### AI-Enhanced Password Strength Analyzer ###
 Enter the password :Tr0ub4dor&3
