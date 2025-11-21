@@ -5,8 +5,7 @@ This Python-based command-line tool assesses the security level of a given passw
 
 PROJECT OVERVIEW
 
-Welcome to the Password Strength Analyzer ! This project is a simple command-line tool developed in Python to evaluate the security level of a password.
-In today's digital world, strong passwords are the first line of defense against security breaches. This analyzer helps users understand why their password is weak or strong by scoring it based on some criterias and providing specific feedbacks for improvement. It's a great demonstration of basic security logic and programming fundamentals.
+Our current password rules are like a simple checklist that says, "You must be 8 characters long and have a capital letter," which is easy for hackers to get around (like the weak password "school name 12"). The smarter approach uses Artificial Intelligence (AI), which acts like a highly trained expert. This expert doesn't just check the rules; it analyzes millions of cracked passwords to learn what really makes one strong, like the overall randomness and patterns. It then gives your password a real-world risk score—predicting how many years it would actually take a supercomputer to guess it—moving us from a basic, easily fooled security system to a dynamic defense that can spot and block even the newest, trickiest attacks.
 
 
 FEATURES AND LOGICS
