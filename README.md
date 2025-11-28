@@ -1,14 +1,14 @@
-*PASSWORD ANALYZER*
+# PASSWORD ANALYZER #
 
 This repository hosts a Password Strength Analyzer, a utility designed to provide users with immediate and meaningful feedback on the strength of their passwords. It has a strong system for calculating the true security level of your password and assign a strength score, helping developers and users encourage the use of strong, unique passwords.
-This Python-based command-line tool assesses the security level of a given password by evaluating factors like length, character diversity.
+This Python-based command-line tool assesses the security level of a given password by evaluating factors like length, character diversity, etc.
 
-PROJECT OVERVIEW
+### PROJECT OVERVIEW ###
 
 Our current password rules are like a simple checklist that says, "You must be 8 characters long and have a capital letter," which is easy for hackers to get around (like the weak password "school name 12"). The smarter approach uses Artificial Intelligence (AI), which acts like a highly trained expert. This expert doesn't just check the rules; it analyzes millions of cracked passwords to learn what really makes one strong, like the overall randomness and patterns. It then gives your password a real-world risk score—predicting how many years it would actually take a supercomputer to guess it—moving us from a basic, easily fooled security system to a dynamic defense that can spot and block even the newest, trickiest attacks.
 
 
-FEATURES AND LOGICS
+### FEATURES AND LOGICS ###
 
 The analyzer scores a password out of a total of 100 points based on the following criteria:
 
@@ -26,7 +26,7 @@ The analyzer scores a password out of a total of 100 points based on the followi
 
 * Repetition Penalty: Detects and penalizes repeated characters (e.g., 'aaa', '111').
 
-RATING SYSTEMS
+### RATING SYSTEMS ###
 
 The final score is translated into an easy-to-understand rating:
 
@@ -40,7 +40,7 @@ The final score is translated into an easy-to-understand rating:
 
 * < 25 -> Not Valid, Retry 
 
-TECHNOLOGIES / TOOLS USED
+### TECHNOLOGIES / TOOLS USED ###
 
 Core Language: Python 3.x
 
@@ -49,7 +49,7 @@ Standard Library: string (used for character sets like punctuation and alphabet)
 Tools: Standard command-line interface (CLI) for input/output.
 
 
-STEPS TO RUN THE CODE
+### STEPS TO RUN THE CODE ###
 
 Since this project uses only the standard Python library (`string`), no external installations are required.
 
@@ -76,7 +76,7 @@ Enter the password :
 
 Type your password and press Enter to see the results, score, and security rating.
 
-EXAMPLE OUTPUT
+### EXAMPLE OUTPUT ###
 
 If you enter a password like `hello`:
 
@@ -93,7 +93,7 @@ rating of the inputted password : very weak, need much more improvement
 --> length of password is too small, suggested length = 10 
 ```
 
-PROJECT STRUCTURE
+### PROJECT STRUCTURE ###
 
 1.  `analyze(password)`: The core function that iterates through the password, checks for character types (upper, lower, digits, special characters), calculates the score based on the `weightage` dictionary, and generates detailed `feedback`.
 2.  `rate(score)`: Translates the final numeric score into a readable string rating using defined `if/elif` logic.
